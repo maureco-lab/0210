@@ -29,32 +29,60 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        app:startIconDrawable="@drawable/baseline_email"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/baseline_email">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:inputType="textEmailAddress"
-            android:hint="Insira seu Email" />
+            android:hint="Insira seu Email"
+            android:inputType="textEmailAddress" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        app:startIconDrawable="@drawable/baseline_lock"
+        android:layout_height="wrap_content"
         app:endIconMode="password_toggle"
-        android:layout_height="wrap_content">
+        app:startIconDrawable="@drawable/baseline_lock">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword"
             android:layout_margin="20dp"
-            android:hint="Insira sua Senha" />
+            android:hint="Insira sua Senha"
+            android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.AppCompat.ImageButton"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Entrar"
+            android:textColor="@color/white"
+            app:backgroundTint="#082E99" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.AppCompat.ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar"
+            android:textColor="@color/white"
+            app:backgroundTint="#082E99" />
+
+
+    </LinearLayout>
 
 
 </LinearLayout>

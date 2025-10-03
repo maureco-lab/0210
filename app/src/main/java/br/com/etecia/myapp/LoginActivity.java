@@ -1,5 +1,6 @@
 package br.com.etecia.myapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -41,6 +42,8 @@ public class LoginActivity extends AppCompatActivity {
 
                 if (email.equals("etecia") && senha.equals("12345")){
 
+                    startActivity(new Intent(getApplicationContext(), MenuActivity.class));
+                    finish();
                 } else{
                     Toast.makeText(getApplicationContext(),"Usuário ou senha incorreto", Toast.LENGTH_SHORT).show();
                 }

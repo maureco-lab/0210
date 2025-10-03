@@ -27,12 +27,14 @@
         android:textColor="#072F9A"
         android:textSize="24dp" />
 
+
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:startIconDrawable="@drawable/baseline_email">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
@@ -48,6 +50,7 @@
         app:startIconDrawable="@drawable/baseline_lock">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
@@ -55,6 +58,17 @@
             android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/txtEsqueceu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Esqueceu a senha? Clique Aqui "
+        android:fontFamily="@font/leckler"
+        android:layout_gravity="end"
+        android:layout_marginTop="-20dp"
+        android:layout_marginRight="20dp"/>
 
 
     <LinearLayout
@@ -66,6 +80,7 @@
 
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEntrar"
             style="@style/Widget.AppCompat.ImageButton"
             android:layout_width="110dp"
             android:layout_height="wrap_content"
@@ -74,12 +89,13 @@
             app:backgroundTint="#082E99" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCadastrar"
             style="@style/Widget.AppCompat.ImageButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Cadastrar"
             android:textColor="@color/white"
-            app:backgroundTint="#082E99" />
+            app:backgroundTint="#539F2C" />
 
 
     </LinearLayout>

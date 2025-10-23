@@ -21,11 +21,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="-40dp"
-        android:fontFamily="@font/leckler"
+        android:fontFamily="@font/josefinssans"
         android:text="Terraria"
         android:textColor="#082C8F"
         android:textSize="43dp"
-        android:textStyle="normal" />
+        android:textStyle="bold" />
 
     <com.google.android.material.progressindicator.CircularProgressIndicator
         android:layout_width="wrap_content"

@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/space"
     android:orientation="vertical"
     tools:context=".LoginActivity">
 
@@ -13,29 +14,46 @@
         android:layout_width="140dp"
         android:layout_height="140dp"
         android:layout_gravity="center"
-        android:src="@drawable/terrz" />
+        android:src="@drawable/rocket" />
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/bbh"
+            android:text="Space"
+            android:textColor="#FBFBFB"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/bbh"
+            android:text="V"
+            android:textColor="#EC2C20"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="-13dp"
-        android:layout_marginBottom="70dp"
-        android:fontFamily="@font/leckler"
-        android:text="Terraria"
-        android:textColor="#072F9A"
-        android:textSize="24dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="-13dp"
-        android:fontFamily="@font/leckler"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/exovriablefontwght"
         android:text="Recuperar Senha"
-        android:textColor="#072F9A"
+        android:textStyle="bold"
+        android:textColor="@color/white"
         android:textSize="24dp" />
 
 
@@ -85,7 +103,6 @@
             android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>
-
 
 
     <LinearLayout

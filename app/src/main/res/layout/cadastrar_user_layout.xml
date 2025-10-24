@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/space"
     android:orientation="vertical"
     tools:context=".LoginActivity">
 
@@ -13,44 +14,68 @@
         android:layout_width="140dp"
         android:layout_height="140dp"
         android:layout_gravity="center"
-        android:src="@drawable/terrz" />
+        android:src="@drawable/rocket" />
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/bbh"
+            android:text="Space"
+            android:textColor="#FBFBFB"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/bbh"
+            android:text="V"
+            android:textColor="#EC2C20"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="-13dp"
-        android:layout_marginBottom="70dp"
-        android:fontFamily="@font/leckler"
-        android:text="Terraria"
-        android:textColor="#072F9A"
-        android:textSize="24dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="-13dp"
-        android:fontFamily="@font/leckler"
-        android:text="Cadastrar Usuário"
-        android:textColor="#072F9A"
-        android:textSize="24dp" />
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/gabarito"
+        android:text="Cadastre-se"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="32dp" />
 
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:startIconDrawable="@drawable/baseline_email">
+        android:layout_marginTop="20dp"
+        style="@style/Widget.Material3.Chip.Input"
+        android:textColorHint="@color/white"
+        app:startIconTint="@color/white"
+        app:startIconDrawable="@drawable/baseline_mail_outline">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/txtEmailcad"
+            android:id="@+id/cadasEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
             android:hint="Insira seu Email"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -58,14 +83,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:endIconMode="password_toggle"
+        android:textColorHint="@color/white"
+        app:startIconTint="@color/white"
+        app:endIconTint="@color/white"
+        style="@style/Widget.Material3.Chip.Input"
         app:startIconDrawable="@drawable/baseline_lock">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/txtSenhacad"
+            android:id="@+id/cadasSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:hint="Insira sua Senha"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
             android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -74,18 +105,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:endIconMode="password_toggle"
+        android:textColorHint="@color/white"
+        app:startIconTint="@color/white"
+        app:endIconTint="@color/white"
+        style="@style/Widget.Material3.Chip.Input"
         app:startIconDrawable="@drawable/baseline_lock">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/txtConfirmSenha"
+            android:id="@+id/confirSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:hint="Cofirme sua Senha"
+            android:hint="Confirme sua Senha"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
             android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>
-
 
 
     <LinearLayout
@@ -97,22 +133,26 @@
 
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnConfirmcadastro"
+            android:id="@+id/btnConfirmEntrar"
             style="@style/Widget.AppCompat.ImageButton"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:text="Cadastar"
-            android:textColor="@color/white"
-            app:backgroundTint="#082E99" />
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:text="Cadastrar"
+            android:textColor="#F7F7F7"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            app:backgroundTint="#E33229" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnVoltarcadastro"
+            android:id="@+id/btnConfirmCancelar"
             style="@style/Widget.AppCompat.ImageButton"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
             android:text="Cancelar"
-            android:textColor="#082E98"
-            app:backgroundTint="#87BAF4" />
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#E13229"
+            app:backgroundTint="#FCFCFC"/>
 
 
     </LinearLayout>

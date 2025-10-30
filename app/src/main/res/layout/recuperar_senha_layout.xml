@@ -57,6 +57,16 @@
         android:textColor="@color/white"
         android:textSize="37dp" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviaremos um código de confirmação para o email solicitado."
+        android:textSize="20dp"
+        android:fontFamily="@font/gabarito"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"/>
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -97,9 +107,9 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnRecuEntrar"
             style="@style/Widget.AppCompat.ImageButton"
-            android:layout_width="200dp"
+            android:layout_width="wrap_content"
             android:layout_height="80dp"
-            android:text="Enviar Link"
+            android:text="Enviar Código"
             android:textColor="#F7F7F7"
             android:textStyle="bold"
             android:textSize="27dp"

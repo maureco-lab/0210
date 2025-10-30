@@ -30,7 +30,7 @@
             android:fontFamily="@font/bbh"
             android:text="Space"
             android:textColor="#FBFBFB"
-            android:textSize="30sp"
+            android:textSize="44sp"
             android:textStyle="bold" />
 
         <TextView
@@ -40,7 +40,7 @@
             android:fontFamily="@font/bbh"
             android:text="V"
             android:textColor="#EC2C20"
-            android:textSize="44sp"
+            android:textSize="48sp"
             android:textStyle="bold" />
 
     </LinearLayout>

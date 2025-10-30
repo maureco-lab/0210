@@ -11,8 +11,8 @@
 
 
     <ImageView
-        android:layout_width="140dp"
-        android:layout_height="140dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_gravity="center"
         android:src="@drawable/rocket" />
 
@@ -30,7 +30,7 @@
             android:fontFamily="@font/bbh"
             android:text="Space"
             android:textColor="#FBFBFB"
-            android:textSize="20sp"
+            android:textSize="30sp"
             android:textStyle="bold" />
 
         <TextView
@@ -49,7 +49,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="200dp"
         style="@style/Widget.Material3.Chip.Input"
         android:textColorHint="@color/white"
         app:startIconTint="@color/white"
@@ -60,6 +60,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
+            android:textSize="20dp"
             android:textColor="@color/white"
             android:backgroundTint="@color/white"
             android:hint="Insira seu Email"
@@ -82,6 +83,7 @@
             android:id="@+id/txtSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
             android:layout_margin="20dp"
             android:hint="Insira sua Senha"
             android:textColor="@color/white"
@@ -95,14 +97,14 @@
         android:id="@+id/txtEsqueceu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Esqueceu a senha? Clique Aqui "
+        android:text="Esqueceu a Senha? Clique aqui"
         android:fontFamily="@font/josefinssans"
         android:layout_gravity="end"
         android:textColor="@color/white"
         android:textStyle="bold"
-        android:textSize="19dp"
-        android:layout_marginTop="-20dp"
-        android:layout_marginBottom="30dp"
+        android:textSize="24dp"
+        android:layout_marginTop="-15dp"
+        android:layout_marginBottom="110dp"
         android:layout_marginRight="20dp"/>
 
 
@@ -117,22 +119,22 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnEntrar"
             style="@style/Widget.AppCompat.ImageButton"
-            android:layout_width="110dp"
-            android:layout_height="60dp"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
             android:text="Entrar"
             android:textColor="#F7F7F7"
             android:textStyle="bold"
-            android:textSize="20dp"
+            android:textSize="30dp"
             app:backgroundTint="#E33229" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnCadastrar"
             style="@style/Widget.AppCompat.ImageButton"
-            android:layout_width="140dp"
-            android:layout_height="60dp"
+            android:layout_width="190dp"
+            android:layout_height="80dp"
             android:text="Cadastrar"
             android:textStyle="bold"
-            android:textSize="20dp"
+            android:textSize="30dp"
             android:textColor="#E13229"
             app:backgroundTint="#FCFCFC" />
 

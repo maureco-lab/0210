@@ -61,7 +61,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Enviaremos um código de confirmação para o email solicitado."
-        android:textSize="20dp"
+        android:textSize="22dp"
         android:fontFamily="@font/gabarito"
         android:textAlignment="center"
         android:textColor="@color/white"

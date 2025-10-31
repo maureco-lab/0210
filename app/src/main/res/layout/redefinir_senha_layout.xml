@@ -59,7 +59,19 @@
         android:layout_marginTop="50dp"
         android:textAlignment="center"
         android:layout_gravity="center"
-        android:layout_marginBottom="80dp"/>
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insira o código que foi enviado para o email solicitado."
+        android:textSize="22dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/gabarito"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="10dp"/>
 
 
 
@@ -176,6 +188,30 @@
 
     </LinearLayout>
 
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reenviar código"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gabarito"
+        android:textSize="20dp"
+        android:layout_marginLeft="50dp"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRedefinirConf"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:text="Confirmar"
+        android:textColor="#F7F7F7"
+        android:textStyle="bold"
+        android:textSize="27dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        app:backgroundTint="#E33229" />
 
 
 </LinearLayout>

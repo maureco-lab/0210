@@ -10,16 +10,17 @@
     tools:context=".RedefinirSenhaActivity">
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/txtVoltarRedefinir"
+        style="@style/Widget.AppCompat.ActionButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:icon="@drawable/baseline_arrow_back"
-        app:iconSize="35dp"
-        style="@style/Widget.AppCompat.ActionButton"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="-65dp"
         android:text="Voltar"
         android:textSize="24dp"
-        android:layout_marginBottom="-65dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="10dp"/>
+        app:icon="@drawable/baseline_arrow_back"
+        app:iconSize="35dp" />
 
     <ImageView
         android:layout_width="150dp"
@@ -31,9 +32,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_marginBottom="50dp"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
@@ -61,28 +62,26 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:text="Insira o Código"
-        android:fontFamily="@font/gabarito"
-        android:textSize="37dp"
-        android:textStyle="bold"
-        android:layout_marginTop="50dp"
-        android:textAlignment="center"
         android:layout_gravity="center"
-        />
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/gabarito"
+        android:text="Insira o Código"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="37dp"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Insira o código que foi enviado para o email solicitado."
-        android:textSize="22dp"
         android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="80dp"
         android:fontFamily="@font/gabarito"
+        android:text="Insira o código que foi enviado para o email solicitado."
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:layout_marginBottom="80dp"
-        android:layout_marginTop="10dp"/>
-
+        android:textSize="22dp" />
 
 
     <LinearLayout
@@ -103,101 +102,101 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="50sp"
                 android:layout_height="60sp"
+                android:backgroundTint="@color/white"
                 android:inputType="number"
                 android:maxLength="1"
-                android:textColor="@color/white"
-                android:backgroundTint="@color/white"
                 android:textAlignment="center"
+                android:textColor="@color/white"
                 android:textSize="25sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="50sp"
             android:layout_height="70sp"
-            android:textColorHint="@color/white"
             android:layout_marginRight="8dp"
-            android:hint="">
+            android:hint=""
+            android:textColorHint="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="50sp"
                 android:layout_height="60sp"
+                android:backgroundTint="@color/white"
                 android:inputType="number"
                 android:maxLength="1"
-                android:textColor="@color/white"
-                android:backgroundTint="@color/white"
                 android:textAlignment="center"
+                android:textColor="@color/white"
                 android:textSize="25sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="50sp"
             android:layout_height="70sp"
-            android:textColorHint="@color/white"
             android:layout_marginRight="8dp"
-            android:hint="">
+            android:hint=""
+            android:textColorHint="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="50sp"
                 android:layout_height="60sp"
-                android:inputType="number"
                 android:backgroundTint="@color/white"
-                android:maxLength="1"
-                android:textColor="@color/white"
-                android:textAlignment="center"
-                android:textSize="25sp" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="50sp"
-            android:textColorHint="@color/white"
-            android:layout_height="70sp"
-            android:layout_marginRight="8dp"
-            android:hint="">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="50sp"
-                android:layout_height="60sp"
                 android:inputType="number"
                 android:maxLength="1"
-                android:textColor="@color/white"
                 android:textAlignment="center"
-                android:backgroundTint="@color/white"
+                android:textColor="@color/white"
                 android:textSize="25sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="50sp"
             android:layout_height="70sp"
-            android:textColorHint="@color/white"
             android:layout_marginRight="8dp"
-            android:hint="">
+            android:hint=""
+            android:textColorHint="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="50sp"
                 android:layout_height="60sp"
+                android:backgroundTint="@color/white"
                 android:inputType="number"
                 android:maxLength="1"
-                android:textColor="@color/white"
                 android:textAlignment="center"
-                android:backgroundTint="@color/white"
+                android:textColor="@color/white"
                 android:textSize="25sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="50sp"
-            android:textColorHint="@color/white"
             android:layout_height="70sp"
             android:layout_marginRight="8dp"
-            android:hint="">
+            android:hint=""
+            android:textColorHint="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="50sp"
                 android:layout_height="60sp"
-                android:inputType="number"
                 android:backgroundTint="@color/white"
+                android:inputType="number"
                 android:maxLength="1"
-                android:textColor="@color/white"
                 android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="50sp"
+            android:layout_height="70sp"
+            android:layout_marginRight="8dp"
+            android:hint=""
+            android:textColorHint="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="50sp"
+                android:layout_height="60sp"
+                android:backgroundTint="@color/white"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/white"
                 android:textSize="25sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -208,12 +207,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:fontFamily="@font/gabarito"
         android:text="Reenviar código"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:fontFamily="@font/gabarito"
-        android:textSize="20dp"
-        android:layout_marginLeft="50dp"/>
+        android:textSize="20dp" />
 
 
     <com.google.android.material.button.MaterialButton
@@ -221,12 +220,12 @@
         style="@style/Widget.AppCompat.ImageButton"
         android:layout_width="wrap_content"
         android:layout_height="80dp"
-        android:text="Confirmar"
-        android:textColor="#F7F7F7"
-        android:textStyle="bold"
-        android:textSize="27dp"
         android:layout_gravity="center"
         android:layout_marginTop="100dp"
+        android:text="Confirmar"
+        android:textColor="#F7F7F7"
+        android:textSize="27dp"
+        android:textStyle="bold"
         app:backgroundTint="#E33229" />
 
 

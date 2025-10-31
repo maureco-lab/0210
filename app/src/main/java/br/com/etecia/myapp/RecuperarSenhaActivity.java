@@ -14,7 +14,7 @@ import com.google.android.material.button.MaterialButton;
 
 public class RecuperarSenhaActivity extends AppCompatActivity {
 
-    MaterialButton btnRecuCancelar;
+    MaterialButton btnRecuCancelar, btnRecuEntrar;
 
 
     @Override
@@ -29,6 +29,15 @@ public class RecuperarSenhaActivity extends AppCompatActivity {
         });
 
         btnRecuCancelar= findViewById(R.id.btnRecuCancelar);
+        btnRecuEntrar= findViewById(R.id.btnRecuEntrar);
+
+        btnRecuEntrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), RedefinirSenhaActivity.class));
+                finish();
+            }
+        });
 
         btnRecuCancelar.setOnClickListener(new View.OnClickListener() {
             @Override

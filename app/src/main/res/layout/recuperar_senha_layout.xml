@@ -41,7 +41,7 @@
             android:fontFamily="@font/bbh"
             android:text="V"
             android:textColor="#EC2C20"
-            android:textSize="30sp"
+            android:textSize="34sp"
             android:textStyle="bold" />
 
     </LinearLayout>

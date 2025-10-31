@@ -17,9 +17,9 @@
         style="@style/Widget.AppCompat.ActionButton"
         android:text="Voltar"
         android:textSize="24dp"
-        android:layout_marginBottom="-60dp"
+        android:layout_marginBottom="-65dp"
         android:layout_marginLeft="5dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="10dp"/>
 
     <ImageView
         android:layout_width="150dp"

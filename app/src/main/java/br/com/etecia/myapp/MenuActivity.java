@@ -3,6 +3,7 @@ package br.com.etecia.myapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,7 +15,7 @@ import com.google.android.material.button.MaterialButton;
 
 public class MenuActivity extends AppCompatActivity {
 
-    MaterialButton btnVoltar;
+    TextView txtVoltarRedefinir;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,9 +28,9 @@ public class MenuActivity extends AppCompatActivity {
             return insets;
         });
 
-        btnVoltar= findViewById(R.id.btnVoltar);
+        txtVoltarRedefinir= findViewById(R.id.txtVoltarRedefinir);
 
-        btnVoltar.setOnClickListener(new View.OnClickListener() {
+        txtVoltarRedefinir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), LoginActivity.class));

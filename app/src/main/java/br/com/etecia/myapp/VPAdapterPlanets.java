@@ -13,11 +13,15 @@ public class VPAdapterPlanets extends FragmentStateAdapter {
     @NonNull
     @Override
     public Fragment createFragment(int position) {
-        return null;
+        switch (position){
+            case 0: return new SolFragment();
+            case 1: return new MarteFragment();
+            default: return new SolFragment();
+        }
     }
 
     @Override
     public int getItemCount() {
-        return 4;
+        return 2;
     }
 }

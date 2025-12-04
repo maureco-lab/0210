@@ -7,7 +7,7 @@ public class Planetas {
     //Construtor vazio
     public Planetas() {
     }
-
+    // getters and setters
     public String getTitulo() {
         return titulo;
     }

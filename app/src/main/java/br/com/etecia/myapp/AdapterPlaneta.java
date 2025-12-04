@@ -13,7 +13,7 @@ import java.util.List;
 
 public class AdapterPlaneta extends RecyclerView.Adapter<AdapterPlaneta.ViewHolder> {
 
-    private List<Planetas> lstPlanetas ;
+    private List<Planetas> lstPlanetas;
     private Context context;
 
     public AdapterPlaneta(List<Planetas> lstPlanetas, Context context) {
@@ -34,7 +34,7 @@ public class AdapterPlaneta extends RecyclerView.Adapter<AdapterPlaneta.ViewHold
 
     @Override
     public int getItemCount() {
-        return 0;
+        return lstPlanetas.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{

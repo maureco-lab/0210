@@ -1,5 +1,6 @@
 package br.com.etecia.myapp;
 
+import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -8,7 +9,17 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.List;
+
 public class AdapterPlaneta extends RecyclerView.Adapter<AdapterPlaneta.ViewHolder> {
+
+    private List<Planetas> lstPlanetas ;
+    private Context context;
+
+    public AdapterPlaneta(List<Planetas> lstPlanetas, Context context) {
+        this.lstPlanetas = lstPlanetas;
+        this.context = context;
+    }
 
     @NonNull
     @Override

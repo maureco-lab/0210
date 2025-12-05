@@ -33,6 +33,10 @@ public class AdapterPlaneta extends RecyclerView.Adapter<AdapterPlaneta.ViewHold
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        holder.txtCardPlaneta.setText(lstPlanetas.get(position).getTitulo());
+        holder.subtxtCardPlaneta.setText(lstPlanetas.get(position).getSubtitulo());
+        holder.imgCardPlaneta.setImageResource(lstPlanetas.get(position).getImgPlaneta());
+
 
     }
 

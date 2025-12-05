@@ -9,6 +9,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ListaPlanetasActivity extends AppCompatActivity {
@@ -26,6 +27,10 @@ public class ListaPlanetasActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        //Criando array de dados
+        lstPlanetas = new ArrayList<>();
+        lstPlanetas.add()
+
         //Recycle view
         listaplaneta = findViewById(R.id.listaplaneta);
 

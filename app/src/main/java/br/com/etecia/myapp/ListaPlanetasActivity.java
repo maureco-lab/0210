@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -30,19 +31,21 @@ public class ListaPlanetasActivity extends AppCompatActivity {
         //Criando array de dados
         lstPlanetas = new ArrayList<>();
         lstPlanetas.add(new Planetas("Sol", "Estrela Central", R.drawable.solgude));
-        lstPlanetas.add(new Planetas("Sol", "Estrela Central", R.drawable.solgude));
-        lstPlanetas.add(new Planetas("Sol", "Estrela Central", R.drawable.solgude));
-        lstPlanetas.add(new Planetas("Sol", "Estrela Central", R.drawable.solgude));
-        lstPlanetas.add(new Planetas("Sol", "Estrela Central", R.drawable.solgude));
-        lstPlanetas.add(new Planetas("Sol", "Estrela Central", R.drawable.solgude));
-        lstPlanetas.add(new Planetas("Sol", "Estrela Central", R.drawable.solgude));
-        lstPlanetas.add(new Planetas("Sol", "Estrela Central", R.drawable.solgude));
-        lstPlanetas.add(new Planetas("Sol", "Estrela Central", R.drawable.solgude));
+        lstPlanetas.add(new Planetas("Mercury", "Estrela Central", R.drawable.mercury));
+        lstPlanetas.add(new Planetas("Venus", "Estrela Central", R.drawable.venu));
+        lstPlanetas.add(new Planetas("Terra", "Estrela Central", R.drawable.terra));
+        lstPlanetas.add(new Planetas("Marte", "Estrela Central", R.drawable.mars));
+        lstPlanetas.add(new Planetas("Júpiter", "Estrela Central", R.drawable.jupiter));
+        lstPlanetas.add(new Planetas("Saturno", "Estrela Central", R.drawable.saturn));
+        lstPlanetas.add(new Planetas("Urano", "Estrela Central", R.drawable.uranus));
+        lstPlanetas.add(new Planetas("Netuno", "Estrela Central", R.drawable.netuno));
 
         //Recycle view
         listaplaneta = findViewById(R.id.listaplaneta);
 
         AdapterPlaneta adapter = new AdapterPlaneta(lstPlanetas, ListaPlanetasActivity.this);
+
+        listaplaneta.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
         //Liga o adaptador à lista
         listaplaneta.setAdapter(adapter);
     }

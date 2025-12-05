@@ -28,5 +28,9 @@ public class ListaPlanetasActivity extends AppCompatActivity {
         });
         //Recycle view
         listaplaneta = findViewById(R.id.listaplaneta);
+
+        AdapterPlaneta adapter = new AdapterPlaneta(lstPlanetas, ListaPlanetasActivity.this);
+        //Liga o adaptador à lista
+        listaplaneta.setAdapter(adapter);
     }
 }

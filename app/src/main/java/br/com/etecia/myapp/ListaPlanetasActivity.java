@@ -29,7 +29,7 @@ public class ListaPlanetasActivity extends AppCompatActivity {
         });
         //Criando array de dados
         lstPlanetas = new ArrayList<>();
-        lstPlanetas.add()
+        lstPlanetas.add(new Planetas());
 
         //Recycle view
         listaplaneta = findViewById(R.id.listaplaneta);

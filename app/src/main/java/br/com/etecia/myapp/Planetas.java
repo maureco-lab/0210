@@ -7,6 +7,13 @@ public class Planetas {
     //Construtor vazio
     public Planetas() {
     }
+
+    public Planetas(String titulo, String subtitulo, int imgPlaneta) {
+        this.titulo = titulo;
+        this.subtitulo = subtitulo;
+        this.imgPlaneta = imgPlaneta;
+    }
+
     // getters and setters
     public String getTitulo() {
         return titulo;

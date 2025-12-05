@@ -29,7 +29,15 @@ public class ListaPlanetasActivity extends AppCompatActivity {
         });
         //Criando array de dados
         lstPlanetas = new ArrayList<>();
-        lstPlanetas.add(new Planetas());
+        lstPlanetas.add(new Planetas("Sol", "Estrela Central", R.drawable.solgude));
+        lstPlanetas.add(new Planetas("Sol", "Estrela Central", R.drawable.solgude));
+        lstPlanetas.add(new Planetas("Sol", "Estrela Central", R.drawable.solgude));
+        lstPlanetas.add(new Planetas("Sol", "Estrela Central", R.drawable.solgude));
+        lstPlanetas.add(new Planetas("Sol", "Estrela Central", R.drawable.solgude));
+        lstPlanetas.add(new Planetas("Sol", "Estrela Central", R.drawable.solgude));
+        lstPlanetas.add(new Planetas("Sol", "Estrela Central", R.drawable.solgude));
+        lstPlanetas.add(new Planetas("Sol", "Estrela Central", R.drawable.solgude));
+        lstPlanetas.add(new Planetas("Sol", "Estrela Central", R.drawable.solgude));
 
         //Recycle view
         listaplaneta = findViewById(R.id.listaplaneta);

@@ -45,11 +45,22 @@
 
     </LinearLayout>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/gabarito"
+        android:text="Entre com sua conta!"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="37dp" />
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="80dp"
         style="@style/Widget.Material3.Chip.Input"
         android:textColorHint="@color/white"
         app:startIconTint="@color/white"
